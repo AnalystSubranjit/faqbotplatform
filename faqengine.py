@@ -12,7 +12,7 @@ import nltk
 from nltk.stem.lancaster import LancasterStemmer
 
 
-class BankFaqs:
+class FaqEngine:
     def __init__(self, faqslist):
         self.faqslist = faqslist
         self.stemmer = LancasterStemmer()

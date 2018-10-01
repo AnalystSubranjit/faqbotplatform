@@ -10,9 +10,8 @@ of the License, or any later version.
 
 ## Scripts:
 * app.py: Chatbot UI built using Flask, using templates/*.html
-* engine.py: Chatbot core logic as well as knowledgebase.
-* run_training: Windows batch file to build trained modeling
-* run_server: Windows batch file to execute Rasa-NLU server.
+* bankfaqs.py: Chatbot core logic as well as knowledgebase.
+
 
 ## Other Data
 * nlu_config.yml: Rasa NLU settings for training as well as executing intent extraction
