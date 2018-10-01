@@ -11,12 +11,16 @@ of the License, or any later version.
 ## Scripts:
 * app.py: Chatbot UI built using Flask, using templates/*.html
 * engine.py: Chatbot core logic as well as knowledgebase.
-* config.json: Rasa NLU settings for training as well as executing intent extraction
 * run_training: Windows batch file to build trained modeling
 * run_server: Windows batch file to execute Rasa-NLU server.
 
+## Other Data
+* nlu_config.yml: Rasa NLU settings for training as well as executing intent extraction
+* nlu_data: Directory containing training files
+* static and templates: Flask UI related files
+
 ## Dependencies:
-* Needs Python 3.5
+* Needs Python 3.5, numpy, scipy, spacy, sklearn crf suite
 
 ## ToDos
 * Add more training data
