@@ -1,5 +1,5 @@
 # GST FAQ Bot with Rasa-NLU
-Set of scripts to build a chatbot which will answer FAQ about Goods and Services Tax (GST) India.
+Set of scripts to build a chatbot which will answer based on the FAQs supplied.
 Copyright (C) 2017 Yogesh H Kulkarni
 
 ## License:
