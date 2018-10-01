@@ -14,24 +14,19 @@ of the License, or any later version.
 
 
 ## Other Data
-* nlu_config.yml: Rasa NLU settings for training as well as executing intent extraction
-* nlu_data: Directory containing training files
+* faqs: csv files containing questions and answers
 * static and templates: Flask UI related files
 
 ## Dependencies:
-* Needs Python 3.5, numpy, scipy, spacy, sklearn crf suite
+* Needs Python 3.5, numpy, scipy, sklearn
 
 ## ToDos
 * Add more training data
-* Entity extraction not working as desired, find out more.
-* Etc.
+
 
 ## References
-* Rasa-NLU [installation](https://github.com/RasaHQ/rasa_nlu)
 * Bhavani Ravi’s event-bot [code](https://github.com/bhavaniravi/rasa-site-bot), Youtube [Video](https://www.youtube.com/watch?v=ojuq0vBIA-g)
-* GST FAQs:
-    * Government [Documentation](http://www.cbec.gov.in/resources//htdocs-cbec/deptt_offcr/faq-on-gst.pdf)
-    * GST India [Documentation](http://www.gstindia.com/frequently-asked-questions-faqs-on-goods-and-services-tax-gst/)
+
 
 ## Disclaimer:
 * Author (yogeshkulkarni@yahoo.com) gives no guarantee of the results of the program. It is just a fun script. Lot of improvements are still to be made. So, don’t depend on it at all.
