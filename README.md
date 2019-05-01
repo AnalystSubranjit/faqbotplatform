@@ -1,6 +1,7 @@
-# GST FAQ Bot with Rasa-NLU
+# FAQ ChatBot with Rasa
 Set of scripts to build a chatbot which will answer based on the FAQs supplied.
-Copyright (C) 2017 Yogesh H Kulkarni
+
+Copyright (C) 2019 Yogesh H Kulkarni
 
 ## License:
 This program is free software; you can redistribute it and/or
@@ -26,7 +27,7 @@ of the License, or any later version.
 
 ## References
 * Bhavani Ravi’s event-bot [code](https://github.com/bhavaniravi/rasa-site-bot), Youtube [Video](https://www.youtube.com/watch?v=ojuq0vBIA-g)
-
+* Official code [code](https://github.com/RasaHQ/rasa-workshop)
 
 ## Disclaimer:
 * Author (yogeshkulkarni@yahoo.com) gives no guarantee of the results of the program. It is just a fun script. Lot of improvements are still to be made. So, don’t depend on it at all.
