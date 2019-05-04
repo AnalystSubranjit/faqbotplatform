@@ -1,4 +1,5 @@
 # FAQs ChatBot
+
 Finds most matching question for your query in the FAQs and retrieves corresponding answer.
 
 Copyright (C) 2019 Yogesh H Kulkarni
@@ -10,10 +11,10 @@ as published by the Free Software Foundation; either version 2
 of the License, or any later version.
 
 ## The way it works:
-* You supply FAQs in form of csv (comma separated file) having Question-Answer-Class on each row (e.g. "What is GST rate for Toothpaste?,12,rate")
-* Questions are vectorized and kept ready for matching, along with the classifier model
-* Once user query comes, its 'class' is predicted and within the class, vectorized query is matched against exiting vectorized questions. 
-* Whichever is most similar, its answer is presented to the user
+* You supply FAQs in the form of csv (comma separated file) having Question-Answer-Class in each row (e.g. "What is GST rate for Toothpaste?,12,rate")
+* Questions are vectorized and kept ready for matching, along with the classifier model [X=vector(question), y=class]
+* Once user query comes, its 'class' is predicted using the classifier model and within the class, vectorized query is matched against existing vectorized questions. 
+* Whichever is most similar, it's answer is presented to the user.
 
 ## Scripts:
 * app.py: Chatbot UI built using Flask, using templates/*.html
