@@ -1,5 +1,5 @@
 # FAQ ChatBot with Rasa
-Set of scripts to build a chatbot which will answer based on the FAQs supplied.
+Finds most matching quetion for your query in the FAQs and retrieves corresponding answer.
 
 Copyright (C) 2019 Yogesh H Kulkarni
 
@@ -9,17 +9,30 @@ modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
 of the License, or any later version.
 
+## The way it works:
+* You supply FAQs in form of csv (comma separated file) having Question-Answer-Class on each row (e.g. "What is GST rate for Toothpaste?,12,rate")
+* Questions are vectorized and kept ready for matching, along with the classifier model
+* Once user query comes, its 'class' is predicted and within the class, vectorized query is matched against exiting vectorized questions. 
+* Whichever is most similar, its answer is presented to the user
+
 ## Scripts:
 * app.py: Chatbot UI built using Flask, using templates/*.html
 * bankfaqs.py: Chatbot core logic as well as knowledgebase.
 
 
-## Other Data
+## Other Data:
 * faqs: csv files containing questions and answers
 * static and templates: Flask UI related files
 
+## To run:
+* Execute app.py
+* Open http://127.0.0.1:8080/ in the browser
+* Start chating
+
+<img src="faqchatbot.png">
+
 ## Dependencies:
-* Needs Python 3.5, numpy, scipy, sklearn
+* Needs Python 3.6, numpy, scipy, sklearn
 
 ## ToDos
 * Add more training data
@@ -28,6 +41,7 @@ of the License, or any later version.
 ## References
 * Bhavani Ravi’s event-bot [code](https://github.com/bhavaniravi/rasa-site-bot), Youtube [Video](https://www.youtube.com/watch?v=ojuq0vBIA-g)
 * Official code [code](https://github.com/RasaHQ/rasa-workshop)
+* Banking FAQ Bot [code](https://github.com/MrJay10/banking-faq-bot)
 
 ## Disclaimer:
 * Author (yogeshkulkarni@yahoo.com) gives no guarantee of the results of the program. It is just a fun script. Lot of improvements are still to be made. So, don’t depend on it at all.

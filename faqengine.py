@@ -35,11 +35,13 @@ class FaqEngine:
             X.append(self.cleanup(question))
         
         self.vectorizer.fit(X)
-        self.le.fit(self.data['Class'])
+#         self.le.fit(self.data['Class'])
         
         X = self.vectorizer.transform(X)
-        y = self.le.transform(self.data['Class'])
+        y = self.data['Class'].values.tolist()
+        y = self.le.fit_transform(y)
         
+        X = X.A # csr_matrix to numpy matrix
         
         trainx, testx, trainy, testy = tts(X, y, test_size=.25, random_state=42)
         
@@ -51,7 +53,9 @@ class FaqEngine:
         #print("User typed : " + usr)
         try:
             t_usr = self.vectorizer.transform([self.cleanup(usr.strip().lower())])
-            class_ = self.le.inverse_transform(self.model.predict(t_usr)[0])
+            t_usr_array = t_usr.toarray()
+            prediction = self.model.predict(t_usr_array)[0]
+            class_ = self.le.inverse_transform([prediction])[0]
             #print("Class " + class_)
             questionset = self.data[self.data['Class']==class_]
             
