@@ -1,5 +1,5 @@
-# FAQ ChatBot with Rasa
-Finds most matching quetion for your query in the FAQs and retrieves corresponding answer.
+# FAQs ChatBot
+Finds most matching question for your query in the FAQs and retrieves corresponding answer.
 
 Copyright (C) 2019 Yogesh H Kulkarni
 
@@ -17,7 +17,7 @@ of the License, or any later version.
 
 ## Scripts:
 * app.py: Chatbot UI built using Flask, using templates/*.html
-* bankfaqs.py: Chatbot core logic as well as knowledgebase.
+* bankfaqs.py: Chatbot core logic as well as knowledge-base.
 
 
 ## Other Data:
@@ -29,7 +29,7 @@ of the License, or any later version.
 * Open http://127.0.0.1:8080/ in the browser
 * Start chating
 
-<img src="faqchatbot.png">
+<img src="faqchatbot.png" alt="chatwindow" width="200"/>
 
 ## Dependencies:
 * Needs Python 3.6, numpy, scipy, sklearn
